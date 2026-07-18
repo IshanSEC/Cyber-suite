@@ -1,0 +1,48 @@
+# Python Virtual Environments
+.venv/
+.venv-1/
+.venv-2/
+venv/
+cybersuite_env/
+env/
+ENV/
+
+# Python Cache and Build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Wordlists and Passwords (extremely large, not for GitHub)
+Wordlists/
+Passwords/
+rockyou.txt
+test_passwords.txt
+
+# Capture files / binaries / temp files
+aaa-01.cap
+out.bin
+
+# Database files
+*.db
+*.sqlite
+
+# Reports (generated during pen testing)
+reports/
+pentest_report.html
+
+# IDE / Editor configuration files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
