@@ -1,70 +1,195 @@
-# CyberSuite
+# 🛡️ CyberSuite
 
-## 🛡️ About the Project
+<p align="center">
+  <img src="assets/logo.png" alt="CyberSuite Logo" width="180">
+</p>
 
-**CyberSuite** is an **All-in-One GUI Penetration Testing Suite** built in Python using PySide6. It provides a unified, graphical interface to manage and execute various popular penetration testing and reconnaissance tools. 
+<p align="center">
+  <strong>An All-in-One GUI Penetration Testing Suite built with Python & PySide6</strong>
+</p>
 
-Instead of juggling multiple command-line interfaces, CyberSuite brings together powerful security tools into a single, cohesive dashboard where you can:
-- Perform **Reconnaissance** (e.g., using Nmap, Amass, whatweb).
-- Conduct **Web Testing** (e.g., using SQLMap, Dirsearch, Nikto).
-- Manage **Vulnerability Assessments** (filter, view, and organize discovered vulnerabilities).
-- Generate **Professional Reports** (HTML, JSON, CSV) to share your findings.
-
-CyberSuite is designed for security professionals, ethical hackers, and students looking for a streamlined workflow during security assessments.
-
-**Disclaimer:** CyberSuite is strictly for educational purposes and authorized security testing. Always obtain explicit written permission before scanning any networks or applications.
-
----
-
-## ⚙️ Installation Process
-
-### Prerequisites
-- Python 3.8 or higher installed on your system.
-- Some modules require external underlying tools (e.g., Nmap, Nikto, SQLMap) to be installed on your OS and available in your system's PATH.
-
-### Step-by-Step Installation
-
-1. **Clone or Download the Repository:**
-   Ensure you have the project files locally on your machine.
-   ```bash
-   cd cybersuite
-   ```
-
-2. **Create a Virtual Environment (Optional but Recommended):**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Linux/macOS
-   # venv\Scripts\activate   # On Windows
-   ```
-
-3. **Install Python Dependencies:**
-   Run the following command to install required Python packages (such as `PySide6`):
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-*(For detailed tool-specific installation instructions like installing Nmap or Nikto on your system, please refer to the `INSTALL.md` or `TOOL_INSTALLATION.md` file).*
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg">
+  <img src="https://img.shields.io/badge/PySide6-GUI-green.svg">
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg">
+  <img src="https://img.shields.io/badge/License-MIT-orange.svg">
+</p>
 
 ---
 
-## 🚀 How to Run It
+# 📖 About the Project
 
-Once you have installed the required Python dependencies, you can start CyberSuite easily.
+**CyberSuite** is an **All-in-One GUI Penetration Testing Suite** developed in **Python** using **PySide6**. It provides a modern graphical interface for managing and executing multiple penetration testing and reconnaissance tools from a single dashboard.
 
-From your terminal or command prompt, navigate to the `cybersuite` directory and run the `main.py` script:
+Instead of switching between multiple terminal windows, CyberSuite centralizes common security assessment tasks into an intuitive GUI, making penetration testing faster, more organized, and easier to manage.
 
-### On Linux / macOS:
+## ✨ Features
+
+- 🔍 Network Reconnaissance
+- 🌐 Website Technology Detection
+- 🛡️ Vulnerability Scanning
+- 📂 Directory Enumeration
+- 💉 SQL Injection Testing
+- 📊 Vulnerability Management
+- 📄 HTML / JSON / CSV Report Generation
+- 🎨 Modern Dark-Themed Interface
+
+---
+
+# 🖥️ Dashboard Preview
+
+<p align="center">
+  <img src="assets/dashboard.png" alt="CyberSuite Dashboard" width="100%">
+</p>
+
+<p align="center">
+  <i>CyberSuite Main Dashboard</i>
+</p>
+
+---
+
+# 🛠️ Integrated Tools
+
+| Category | Tools |
+|----------|-------|
+| Network Scanning | Nmap |
+| Subdomain Enumeration | Amass |
+| Website Fingerprinting | WhatWeb |
+| Directory Enumeration | Dirsearch |
+| Vulnerability Scanning | Nikto |
+| SQL Injection Testing | SQLMap |
+
+---
+
+# ⚙️ Installation
+
+## Prerequisites
+
+- Python **3.8+**
+- Git
+- Required security tools installed and added to your system PATH
+  - Nmap
+  - SQLMap
+  - Nikto
+  - Amass
+  - WhatWeb
+  - Dirsearch
+
+---
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/CyberSuite.git
+
+cd CyberSuite
+```
+
+---
+
+## Create Virtual Environment
+
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Windows
+
+```bash
+python -m venv venv
+
+venv\Scripts\activate
+```
+
+---
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# 🚀 Running CyberSuite
+
+### Linux / macOS
+
 ```bash
 python3 main.py
 ```
 
-### On Windows:
+### Windows
+
 ```bash
 python main.py
 ```
 
-*Alternatively, you can use the provided batch (`run.bat`) or shell (`run.sh`) scripts to start the application.*
+Alternatively,
 
-The CyberSuite Graphical User Interface (GUI) will launch automatically. From there, you can navigate the tabs, configure your settings, and begin your ethical hacking workflows!
+```bash
+run.bat
+```
 
-> **Note:** Some scans (like aggressive Nmap scans) might require administrative or root privileges. If you encounter permission errors, you may need to run the application with elevated privileges (e.g., `sudo python3 main.py` on Linux), although this should be done with caution.
+or
+
+```bash
+./run.sh
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+CyberSuite/
+│
+├── assets/
+│   ├── dashboard.png
+│   └── logo.png
+│
+├── modules/
+├── reports/
+├── requirements.txt
+├── main.py
+├── run.bat
+├── run.sh
+└── README.md
+```
+
+---
+
+# 📑 Report Formats
+
+CyberSuite can export scan results in:
+
+- HTML
+- JSON
+- CSV
+
+---
+
+# ⚠️ Disclaimer
+
+CyberSuite is intended **only for educational purposes and authorized security testing**.
+
+Always obtain explicit written permission before scanning or testing any system or network. The developer is **not responsible** for any misuse of this software.
+
+---
+
+# 👨‍💻 Author
+
+**Ishan Ali**
+
+Cyber Security Enthusiast • Ethical Hacker • Python Developer
+
+GitHub: https://github.com/IshanSEC
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, consider giving it a ⭐ on GitHub!
