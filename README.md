@@ -1,7 +1,7 @@
 # 🛡️ CyberSuite
 
 <p align="center">
-  <img src="assets/logo.png" alt="CyberSuite Logo" width="180">
+  <img src="assets/Dashboard.png" alt="CyberSuite Dashboard" width="180">
 </p>
 
 <p align="center">
